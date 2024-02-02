@@ -1,4 +1,4 @@
-class Orixas {
+class OrixasClass {
   constructor(name, description, symbol, image, history) {
     this.name = name;
     this.description = description;
@@ -12,4 +12,4 @@ class Orixas {
   }
 }
 
-export default Orixas;
+export default OrixasClass;
