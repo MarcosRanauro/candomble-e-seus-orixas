@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import OrixasClass from '../components/OrixasClass';
 import OxaguianIMG from '../img/Oxaguian.jpg';
 import OxalaIMG from '../img/Oxala.jpg';
@@ -40,6 +41,10 @@ const orixas = [
   ),
 ];
 
+export function findOrixaById(id) {
+  return orixas.find((orixa) => orixa.id === parseInt(id));
+}
+
 function OrixasList() {
   return (
     <>
@@ -53,7 +58,7 @@ function OrixasList() {
               <div className="card-body">
                 <p className="card-text">{orixa.getFullDescription()}</p>
                 <p>{orixa.history}</p>
-                <button className="btn btn-primary">Go somewhere</button>
+                <Link to={`/orixas/${orixa.id}`} className="btn btn-primary">Ver mais</Link>
               </div>
             </div>
           </div>
