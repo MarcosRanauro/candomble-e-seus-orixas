@@ -1,5 +1,6 @@
 class OrixasClass {
-  constructor(name, description, symbol, image, history) {
+  constructor(id, name, description, symbol, image, history) {
+    this.id = id;
     this.name = name;
     this.description = description;
     this.symbol = symbol;
