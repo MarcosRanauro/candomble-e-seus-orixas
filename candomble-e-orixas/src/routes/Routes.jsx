@@ -6,6 +6,7 @@ import OrixasDetails from "../components/OrixasDetails";
 
 function appRoutes() {
   return (
+    // Aqui eu fiz a importação de todas as rotas que eu criei, e defini o que cada uma delas vai renderizar. Mantendo a organização do código.
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/orixas" element={<Orixas />} />

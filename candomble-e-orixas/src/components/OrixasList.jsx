@@ -6,6 +6,7 @@ import OxalaIMG from '../img/Oxala.jpg';
 import Nana from '../img/Nana.jpg';
 import Yemanja from '../img/Yemanja.jpg';
 
+// Aqui eu implementei uma array com todos os Orixas que eu criei e vou criar no futuro. Isso se chama instanciar a classe pai que está no arquivo OrixasClass. Mantendo a organização do código.
 const orixas = [
   new OrixasClass(
     1,
@@ -41,23 +42,25 @@ const orixas = [
   ),
 ];
 
+// Essa função é responsável por encontrar um orixá pelo id. Vou usar essa função para encontrar um orixá pelo id na página de detalhes do orixá. Assim eu consigo acessar todos os atributos que o orixa possui e renderizar na pagina de detalhes. Mantendo a organização do código.
 export function findOrixaById(id) {
   return orixas.find((orixa) => orixa.id === parseInt(id));
 }
 
 function OrixasList() {
+  // Aqui eu fiz um map para percorrer todos os Orixas que eu criei na constante orixas, e posso renderizar o atributo que eu quiser de cada Orixa. Mantendo a organização do código.
   return (
     <>
       <h1 class="d-flex flex-column align-items-center">Orixás</h1>
       <div class="row">
         {orixas.map((orixa) => (
-          <div class="d-flex justify-content-around col-md-4 mb-4">
-            <div key={orixa.id} className="card" style={{ width: '18rem' }}>
+          <div class="d-flex justify-content-around col-md-4 mb-4" key={orixa.id}>
+            <div className="card" style={{ width: '18rem' }}>
               <h5 className="card-title">{orixa.name}</h5>
               <img src={orixa.image} alt={orixa.name} className="card-img-top"></img>
               <div className="card-body">
                 <p className="card-text">{orixa.getFullDescription()}</p>
-                <p>{orixa.history}</p>
+                {/* Aqui eu fiz um link para a página de detalhes do orixá, passando o id do orixá como parâmetro. Esse Link foi importado pelo react-router-dom. */}
                 <Link to={`/orixas/${orixa.id}`} className="btn btn-primary">Ver mais</Link>
               </div>
             </div>
