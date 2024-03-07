@@ -1,0 +1,12 @@
+.container {
+  background-color: #f2f2f2;
+  /* Cinza claro para o fundo */
+  border: 1px solid #ccc;
+  /* Borda cinza claro */
+  border-radius: 10px;
+  /* Borda arredondada */
+  padding: 20px;
+  /* Espaçamento interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra esfumaçada */
+}
