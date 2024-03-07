@@ -33,10 +33,13 @@ const orixas = [
   ),
   new OrixasClass(
     2,
-    "Oxaguian",
+    "Oxaguian - Osáàlá Oguian",
     "Orixá da juventude, da renovação e do movimento.",
     "Espada e escudo",
-    "Ejioníle",
+    "Ejionilé",
+    "Sexta-feira",
+    "Branco, Prata, Azul",
+    "Inhame pilado",
     OxaguianIMG,
     "Oxaguian é o orixá da juventude, da renovação e do movimento. Ele é o filho de Iemanjá e Oxalá, e é considerado um orixá guerreiro. Ele é o dono da espada e do escudo, e é o protetor dos jovens e dos soldados. Oxaguian é o orixá que abre os caminhos, e é o responsável por proteger as pessoas que estão começando uma nova fase em suas vidas."
   ),

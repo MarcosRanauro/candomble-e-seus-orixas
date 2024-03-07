@@ -23,16 +23,29 @@ function OrixasDetails() {
   return (
     <>
       <Header />
-      <div class="d-flex justify-content-center">
-        <h1>{orixa.name}</h1>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div class="col-md-4 mb-2">
-          <img src={orixa.image} alt={orixa.name} class="img-fluid" />
-          <h6>{orixa.getSymbolDescription()}</h6>
-          <h6>{orixa.getOduDescription()}</h6>
-          <p>{orixa.history}</p>
-          <button class="btn btn-primary" onClick={handleClick}>Voltar</button>
+      <div class="container">
+        <div class="row justify-content-center">
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-4">
+            <img src={orixa.image} alt={orixa.name} class="img-fluid" />
+          </div>
+          <div class="col-md-8">
+            <h5>{orixa.name}</h5>
+            <p><strong>Dia: </strong>{orixa.day}</p>
+            <p><strong>Simbolos: </strong>{orixa.symbol}</p>
+            <p><strong>Odu regente: </strong>{orixa.odu}</p>
+            <p><strong>Cor: </strong>{orixa.color}</p>
+            <p><strong>Comida: </strong>{orixa.food}</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="col-md-4 mb-2">
+              <p>{orixa.history}</p>
+              <button class="btn btn-primary" onClick={handleClick}>Voltar</button>
+            </div>
+          </div>
         </div>
       </div>
     </>
