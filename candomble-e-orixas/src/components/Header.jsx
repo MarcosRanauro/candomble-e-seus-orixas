@@ -13,7 +13,6 @@ function Header() {
             <a class="nav-link active" aria-current="page" href="/">Home</a>
             <a class="nav-link active" href="/Orixas">Orixas</a>
             <a class="nav-link" href="/">Pricing</a>
-            <button class="nav-link disabled" aria-disabled="true">Disabled</button>
           </div>
         </div>
       </div>
